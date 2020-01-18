@@ -1,6 +1,7 @@
 # hood
 
-This is a demo project to present Cypress testing in my office.
+This is a demo project to present Cypress testing in my office. It is a simple
+[xkcd] reader using the available [JSON API][xkcd-json].
 
 The project is bootstrapped using [Vue CLI](https://cli.vuejs.org/).
 
@@ -12,19 +13,23 @@ The project is bootstrapped using [Vue CLI](https://cli.vuejs.org/).
   - [ ] Show the title
   - [ ] Show the transcript
 - [ ] Has buttons to navigate throughout the comic
-  - [ ] Has "Previous" button
-  - [ ] Has "Next" button
-  - [ ] Has "First" button
-  - [ ] Has "Last" button
-  - [ ] Has "Random" button
-- [ ] Has keyboard shortcut to navigate without using mouse
-  - [ ] `Left arrow` = "Previous" button
-  - [ ] `Right arrow` = "Next" button
-  - [ ] `Up arrow` = Scrolls up
-  - [ ] `Down arrow` = Scrolls down
-  - [ ] `R` = "Random" button
-  - [ ] `F` = "First" button
-  - [ ] `L` = "Last" button
+  - [ ] Has "Previous" button for navigating to previous comic
+  - [ ] Has "Next" button for navigating to next comic
+  - [ ] Has "First" button for navigating to first comic
+  - [ ] Has "Last" button for navigating to last comic
+  - [ ] Has "Random" button for navigating to random comic
+- [ ] Can jump to specific comic number
+  - [ ] Has "Jump" button
+  - [ ] Show a pop-up text box to enter number of comic to jump into
+- [ ] Has keyboard shortcuts to use the app
+  - [ ] Left arrow = "Previous" button
+  - [ ] Right arrow = "Next" button
+  - [ ] F = "First" button
+  - [ ] L = "Last" button
+  - [ ] R = "Random" button
+  - [ ] J = "Jump" button
+  - [ ] Up arrow = Scrolls up
+  - [ ] Down arrow = Scrolls down
 - [ ] Has easter egg
   - [ ] Keyboard `H` will show an image of Hood (actual HMS Hood ship)
   - [ ] Keyboard `Ctrl-H` will show an image of Hood
@@ -46,4 +51,8 @@ Additional commands:
 
 ## License
 
-Licensed under [MIT License](https://github.com/tkesgar/hood/blob/master/LICENSE).
+Licensed under [MIT License][lic].
+
+[lic]: https://github.com/tkesgar/hood/blob/master/LICENSE
+[xkcd-json]: https://xkcd.com/json.html
+[xkcd]: https://xkcd.com/

@@ -26,8 +26,8 @@ The project is bootstrapped using [Vue CLI](https://cli.vuejs.org/).
   - [ ] `F` = "First" button
   - [ ] `L` = "Last" button
 - [ ] Has easter egg
-  - [ ] Keyboard `H` will show an image of Hood
-  - [ ] Keyboard `Ctrl-H` will show an image of Hood (Azur Lane)
+  - [ ] Keyboard `H` will show an image of Hood (actual HMS Hood ship)
+  - [ ] Keyboard `Ctrl-H` will show an image of Hood
 
 ## Commands
 

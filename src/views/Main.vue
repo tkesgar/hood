@@ -1,6 +1,15 @@
 <template>
   <div>
-    <h1>Hello world!</h1>
-    <p>It works!</p>
+    <comic-viewer />
   </div>
 </template>
+
+<script>
+import ComicViewer from "../components/ComicViewer";
+
+export default {
+  components: {
+    ComicViewer
+  }
+};
+</script>

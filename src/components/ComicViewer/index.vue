@@ -40,7 +40,8 @@ export default {
   },
   data() {
     return {
-      id: this.initialId
+      id: this.initialId,
+      comicData: null
     };
   },
   computed: {

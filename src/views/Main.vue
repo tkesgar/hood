@@ -1,6 +1,6 @@
 <template>
   <b-container class="Main my-5">
-    <comic-viewer />
+    <comic-viewer :initial-id="initialId" />
   </b-container>
 </template>
 
@@ -10,6 +10,12 @@ import ComicViewer from "../components/ComicViewer";
 export default {
   components: {
     ComicViewer
+  },
+  props: {
+    initialId: {
+      type: Number,
+      default: null
+    }
   }
 };
 </script>

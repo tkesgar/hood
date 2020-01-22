@@ -8,6 +8,15 @@ const routes = [
   {
     path: "/",
     component: Main
+  },
+  {
+    path: "/:comicId",
+    component: Main,
+    props(route) {
+      return {
+        initialId: Number(route.params.comicId) || null
+      };
+    }
   }
 ];
 

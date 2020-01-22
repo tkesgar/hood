@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <b-container class="Main my-5">
     <comic-viewer />
-  </div>
+  </b-container>
 </template>
 
 <script>

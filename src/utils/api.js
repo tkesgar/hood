@@ -1,9 +1,9 @@
 import ky from "ky";
 
-export async function getComic(id = null) {
-  if (!id) {
-    return ky(`https://xkcd.com/info.0.json`).json();
-  }
+const client = ky.create({
+  prefixUrl: "http://localhost:8081/"
+});
 
-  return ky(`https://xkcd.com/${id}/info.0.json`).json();
+export async function getComic(id = 0) {
+  return client(`comic/${id}`).json();
 }

@@ -7,32 +7,32 @@ The project is bootstrapped using [Vue CLI](https://cli.vuejs.org/).
 
 ## Specification
 
-- [ ] Show xkcd comic
-  - [ ] Show the comic image
-  - [ ] Show the publication date
-  - [ ] Show the title
-  - [ ] Show the transcript
-- [ ] Has buttons to navigate throughout the comic
-  - [ ] Has "Previous" button for navigating to previous comic
-  - [ ] Has "Next" button for navigating to next comic
-  - [ ] Has "First" button for navigating to first comic
-  - [ ] Has "Last" button for navigating to last comic
-  - [ ] Has "Random" button for navigating to random comic
-- [ ] Can jump to specific comic number
+- Show xkcd comic
+  - [x] Show the comic image
+  - [x] Show the publication date
+  - [x] Show the title
+  - [x] Show the transcript
+- Has buttons to navigate throughout the comic
+  - [x] Has "Previous" button for navigating to previous comic
+  - [x] Has "Next" button for navigating to next comic
+  - [x] Has "First" button for navigating to first comic
+  - [x] Has "Last" button for navigating to last comic
+  - [x] Has "Random" button for navigating to random comic
+- Can jump to specific comic number
   - [ ] Has "Jump" button
   - [ ] Show a pop-up text box to enter number of comic to jump into
-- [ ] Has keyboard shortcuts to use the app
-  - [ ] Left arrow = "Previous" button
-  - [ ] Right arrow = "Next" button
-  - [ ] F = "First" button
-  - [ ] L = "Last" button
-  - [ ] R = "Random" button
+- Has keyboard shortcuts to use the app
+  - [x] Left arrow = "Previous" button
+  - [x] Right arrow = "Next" button
+  - [x] F = "First" button
+  - [x] L = "Last" button
+  - [x] R = "Random" button
   - [ ] J = "Jump" button
   - [ ] Up arrow = Scrolls up
   - [ ] Down arrow = Scrolls down
-- [ ] Has easter egg
-  - [ ] Keyboard `H` will show an image of Hood (actual HMS Hood ship)
-  - [ ] Keyboard `Ctrl-H` will show an image of Hood
+- Has easter egg
+  - [x] Keyboard `H` will show an image of Hood
+  - [x] Keyboard `Ctrl-Shift-H` will show an image of _the_ Hood
 
 ## Commands
 
@@ -46,8 +46,7 @@ Default commands from Vue CLI:
 Additional commands:
 
 - Format using Prettier: `npm run format`
-- Run unit tests: `npm test`
-- Run functional tests: `npm run test:func`
+- Open Cypress: `npm run cypress`
 
 ## License
 

@@ -6,6 +6,7 @@
           class="App-imgEasterEgg"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/HMS_Hood_%2851%29_-_March_17%2C_1924.jpg/640px-HMS_Hood_%2851%29_-_March_17%2C_1924.jpg"
           alt="Hood"
+          data-cy="easter-egg-hood"
         />
       </a>
 
@@ -20,6 +21,7 @@
           class="App-imgEasterEgg"
           src="https://static.zerochan.net/Hood.%28Azur.Lane%29.full.2776455.jpg"
           alt="Cute Hood"
+          data-cy="easter-egg-cute-hood"
         />
       </a>
 
@@ -31,6 +33,28 @@
     <router-view />
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    handleKey(event) {
+      event.preventDefault();
+
+      if (event.code === "KeyH") {
+        const target =
+          event.ctrlKey && event.shiftKey ? "easterEggHoodAL" : "easterEggHood";
+        this.$bvModal.show(target);
+      }
+    }
+  },
+  created() {
+    window.addEventListener("keydown", this.handleKey);
+  },
+  beforeDestroy() {
+    window.removeEventListener("keydown", this.handleKey);
+  }
+};
+</script>
 
 <style scoped>
 .App-imgEasterEgg {

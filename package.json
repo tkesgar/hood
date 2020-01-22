@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "format": "prettier --write **/*",
-    "endpoint": "node endpoint"
+    "endpoint": "node endpoint",
+    "cypress": "cypress"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
@@ -33,6 +34,7 @@
     "babel-eslint": "^10.0.3",
     "cypress": "^3.8.2",
     "eslint": "^5.16.0",
+    "eslint-plugin-cypress": "^2.8.1",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.0.0",
     "lint-staged": "^9.5.0",
@@ -47,6 +49,7 @@
     },
     "extends": [
       "plugin:vue/essential",
+      "plugin:cypress/recommended",
       "@vue/prettier"
     ],
     "parserOptions": {

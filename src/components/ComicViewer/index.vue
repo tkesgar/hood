@@ -17,7 +17,12 @@
           @random="handleRandom"
         />
       </div>
-      <img class="ComicViewer-img my-4" :src="src" :alt="alt" />
+      <img
+        class="ComicViewer-img my-4"
+        :src="src"
+        :alt="alt"
+        data-cy="comic-img"
+      />
       <blockquote class="blockquote text-center">{{ alt }}</blockquote>
     </template>
   </div>
@@ -108,14 +113,6 @@ export default {
         case "KeyR":
           this.handleRandom();
           break;
-        case "KeyH": {
-          const target =
-            event.ctrlKey && event.shiftKey
-              ? "easterEggHoodAL"
-              : "easterEggHood";
-          this.$bvModal.show(target);
-          break;
-        }
         default:
           break;
       }

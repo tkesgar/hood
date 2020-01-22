@@ -46,7 +46,8 @@ Default commands from Vue CLI:
 Additional commands:
 
 - Format using Prettier: `npm run format`
-- Open Cypress: `npm run cypress`
+- Open Cypress Test Runner: `npm run cy:open`
+- Run Cypress tests: `npm run cy:run`
 
 ## License
 
